@@ -4,4 +4,5 @@ Allows for the creation of new elements based on a Mustache template, these elem
 
 Usage:
 ````javascript
-$(container).addMore(options);````
+$(container).addMore(options);
+````
