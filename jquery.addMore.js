@@ -69,7 +69,7 @@
 		more: function(event)
 		{
 			event.preventDefault();
-			var templateData = $.isFunction(event.data.templateData) ? event.data.templateData.call(event.data) : event.data.templateData,
+			var templateData = $.isFunction(event.data.templateData) ? event.data.templateData.apply(null, [event.data]) : event.data.templateData,
 			$more = $(Mustache.render(event.data.template, templateData)),
 			lastItem = $(event.data.item, event.data.container).last();
 		  
